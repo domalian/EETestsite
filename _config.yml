@@ -3,7 +3,7 @@
 
 # SITE SPECIFIC: The following fields are typically changed for each site
 name: EE Courses
-baseurl: /eecoursesmorea
+baseurl: /EETestsite
 morea_theme: spacelab
 timezone: Pacific/Honolulu
 morea_navbar_items:
