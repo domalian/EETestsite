@@ -8,4 +8,5 @@ morea_type: reading
 morea_sort_order: 2
 morea_labels:
   - Reference
+  - PDF
 ---

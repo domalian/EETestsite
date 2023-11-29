@@ -9,8 +9,9 @@ morea_outcomes:
 morea_readings:
    - reading-laplaceinitial-RLC
    - reading-laplaceinitial-pdf
+   - reading-laplacetable
 morea_experiences:
-   - experience-laplaceinitial
+   - experience-laplaceinitial-hw7
 morea_assessments:
    - assessment-laplaceinitial
 morea_type: module
@@ -21,4 +22,4 @@ morea_labels:
 morea_sort_order: 21
 ---
 
-CHANGE ME
+Solve equations and circuits with intial conditions for currents and voltages using Laplace, inverse Laplace, and circuit analysis.

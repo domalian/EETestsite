@@ -1,5 +1,5 @@
 ---
-title: "Circuit Analysis Using Laplace Transform"
+title: "Laplace Transform of RLC"
 published: true
 morea_id: reading-laplaceinitial-RLC
 morea_summary: "How to apply Laplace transform to resistors, inductors, and capacitors with initial conditions"
