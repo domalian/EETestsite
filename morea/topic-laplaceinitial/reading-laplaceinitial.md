@@ -22,9 +22,9 @@ Before continuing, you must have covered:
 3. Transform the solution back to time domain using inverse transform.  
 
 ## Laplace Transformation of Ideal Resistors, Capacitors, and Inductors  
-<center><img src="timetos-domainvisual.png" alt="centered image"> </center>
+### Resistors  
+<center><img src="timetos-domainvisual-resistor.png" alt="centered image"> </center>  
   
-### Resistors
 The Laplace transformation of a resistor's impedence with a value of $$R\, \Omega$$ is $$R\, \Omega$$.
    
 The voltage-current relationship for a resistor in the time domain is  
@@ -32,7 +32,9 @@ The voltage-current relationship for a resistor in the time domain is
 By taking the Laplace transform, it is transformed into the s-domain
 <div align="center"> $$V(s) = RI(s)$$ </div>  
 
-### Inductors
+### Inductors  
+<center><img src="timetos-domainvisual-inductor.png" alt="centered image"> </center>  
+  
 Unlike resistors which dissipate energy and thus are independent of frequency (also expressed through Ohm's Law), inductors store energy when *current* flows through them, and thus are frequency-dependent.
   
 This can also be expressed through the equation
@@ -50,7 +52,9 @@ $$I_{L}(s) - \frac{V_{L}(s)}{sL} - \frac{i_{L}(0^-)}{s} = 0$$ </div>
   
 The second equation might provide a better perspective of how the current is split between branches. Going back to the table, $$\frac{V_{L}(s)}{sL}$$ represents the current going across the inductor, and $$\frac{i_{L}(0^-)}{s}$$ represents the current that was initially going across the inductor when $$t=0$$.
   
-### Capacitors
+### Capacitors  
+<center><img src="timetos-domainvisual-capacitor.png" alt="centered image"> </center>  
+  
 Similar to inductors, capacitors also store energy and are frequency-dependent, but it occurs when there's *voltage* going across it.
   
 This can be expressed through the equation  
