@@ -1,13 +1,13 @@
 ---
 title: "Circuit Analysis Using Laplace Transform"
 published: true
-morea_id: reading-laplaceinitial
-morea_summary: "How to apply Laplace transform to analyze a circuit with initial conditions"
+morea_id: reading-laplaceinitial-RLC
+morea_summary: "How to apply Laplace transform to resistors, inductors, and capacitors with initial conditions"
 morea_type: reading
 morea_labels:
 ---
 
-# Analyze a Circuit With Initial Conditions Using Laplace Transform  
+# Performing Laplace Transform On Resistors, Inductors, and Capacitors With Initial Conditions
 
 ## Prerequisite Knowledge
 Before continuing, you must have covered:  

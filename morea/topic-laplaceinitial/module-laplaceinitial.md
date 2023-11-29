@@ -7,7 +7,8 @@ morea_prerequisites:
 morea_outcomes:
    - outcome-laplaceinitial
 morea_readings:
-   - reading-laplaceinitial
+   - reading-laplaceinitial-RLC
+   - reading-laplaceinitial-pdf
 morea_experiences:
    - experience-laplaceinitial
 morea_assessments:
