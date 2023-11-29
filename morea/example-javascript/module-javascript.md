@@ -1,6 +1,6 @@
 ---
 title: "Javascript: Basics"
-published: true
+published: false
 morea_coming_soon: false
 morea_id: example-javascript
 morea_prerequisites:
@@ -24,7 +24,7 @@ morea_icon_url: /morea/example-javascript/javascript.png
 morea_start_date: "2021-07-12"
 morea_end_date: "2021-07-16T23:00"
 morea_labels:
-morea_sort_order: 21
+morea_sort_order: 1
 ---
 
 Basic Javascript coding: variables, expressions, conditionals, loops, functions, arrays, objects.
