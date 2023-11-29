@@ -22,8 +22,11 @@ Before continuing, you must have covered:
 3. Transform the solution back to time domain using inverse transform.
 
 ## Laplace Transformation of Resistors, Capacitors, and Inductors
-Resistors:  
-    &nbsp;&nbsp;Time domain: $$ V(t) = Ri(t) $$  
+### Resistors
+The Laplace transform of a resistor's impedence with a value of $$R\, \Omega$$ is $$R\, \Omega$$.  
+The voltage-current relationship for a resistor in the time domain is $$V(t) = Ri(t)$$.  
+    By taking the Laplace transform, it is transformed into the s-domain, $$V(s) = RI(s)$$
+
     &nbsp;&nbsp;Frequency domain: $$ V(s) = Ri(s) $$  
 
     The impedence of resistors do not depend of time
