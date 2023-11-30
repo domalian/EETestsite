@@ -70,7 +70,7 @@ The current source can also be transformed back into a voltage source in series 
 <div align="center"> $$V_{C}(s) = \frac{I_{C}(s)}{sC} + \frac{v_{C}(0^{-})}{s}$$  
 $$V_{C}(s) - \frac{I_{C}(s)}{sC} - \frac{v_{C}(0^{-})}{s} = 0$$</div>
   
-On the table, since $$\frac{v_{C}(0^{-})}{s}$$ is positive, it has the same polarity as V_{C}(s). However, the second equation may provide a better perspective on the voltages going across each component.
+On the table, since $$\frac{v_{C}(0^{-})}{s}$$ is positive, it has the same polarity as $$V_{C}(s)$$. However, the second equation may provide a better perspective on the voltages going across each component.
 <!-- $$
 \mathscr{L}\{f(t)\}=\int_{t=0}^{\infty}f(t)e^{-st}dt
 $$ -->
