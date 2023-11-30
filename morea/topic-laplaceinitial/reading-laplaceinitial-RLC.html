@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> EE Testsite | Laplace Transform of RLC </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/EETestsite/css/themes/cerulean-purple/bootstrap.min.css">
+  <link rel="stylesheet" href="/EETestsite/css/style.css">
+  <link rel="stylesheet" href="/EETestsite/css/syntax.css">
+  <link rel="shortcut icon" href="/EETestsite/favicon.ico" type="image/x-icon" />
+  <link href="/EETestsite/css/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/EETestsite/css/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/EETestsite/css/fontawesome/css/solid.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+  
+
+  <!-- Load JQuery, then use it to attach the class 'active' to navbar item currently displayed. -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $('.nav-item').find('a[href="' + location.pathname + '"]').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/EETestsite/index.html"> EE Testsite </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item"><a class="nav-link" href="/EETestsite/prerequisites/">Prerequisites</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/EETestsite/modules/">Modules</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/EETestsite/outcomes/">Outcomes</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/EETestsite/readings/">Readings</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/EETestsite/experiences/">Experiences</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/EETestsite/assessments/">Assessments</a></li>
+        
+        
+        <li class="nav-item"><a class="nav-link" href="/EETestsite/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Internal fragment for displaying the breadcrumb bar -->
+<div class="breadcrumb-background" style="padding-top: 1em; padding-bottom: .01em">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="/EETestsite/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/EETestsite/modules">Modules</a></li>
+        <li class="breadcrumb-item"><a href="/EETestsite/modules/module-laplaceinitial">Laplace with Initial Conditions</a></li>
+        <li class="breadcrumb-item active">Laplace Transform of RLC</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="performing-laplace-transform-on-resistors-inductors-and-capacitors-with-initial-conditions">Performing Laplace Transform On Resistors, Inductors, and Capacitors With Initial Conditions</h1>
+
+<h2 id="prerequisite-knowledge">Prerequisite Knowledge</h2>
+<p>Before continuing, you must have covered:</p>
+<ul>
+  <li>Voltage-current relationships for ideal resistors, capacitors, and inductors</li>
+  <li>Methods of circuit analysis</li>
+  <li>Laplace transformation</li>
+  <li>Inverse Laplace transformation</li>
+</ul>
+
+<h2 id="general-steps-in-applying-the-laplace-transform">General steps in applying the Laplace transform:</h2>
+<ol>
+  <li>Transform the circuit from time domain to the s-domain.</li>
+  <li>Use methods of circuit analysis such as nodal, mesh, source transformation, superposition, and other techniques that you are familiar with.</li>
+  <li>Transform the solution back to time domain using inverse transform.</li>
+</ol>
+
+<h2 id="laplace-transformation-of-ideal-resistors-capacitors-and-inductors">Laplace Transformation of Ideal Resistors, Capacitors, and Inductors</h2>
+<h3 id="resistors">Resistors</h3>
+<center><img src="timetos-domainvisual-resistor.png" alt="centered image" /> </center>
+
+<p>The Laplace transformation of a resistor’s impedence with a value of \(R\, \Omega\) is \(R\, \Omega\).</p>
+
+<p>The voltage-current relationship for a resistor in the time domain is</p>
+<div align="center"> $$V(t) = Ri(t)$$  </div>
+<p>By taking the Laplace transform, it is transformed into the s-domain</p>
+<div align="center"> $$V(s) = RI(s)$$ </div>
+
+<h3 id="inductors">Inductors</h3>
+<center><img src="timetos-domainvisual-inductor.png" alt="centered image" /> </center>
+
+<p>Unlike resistors which dissipate energy and thus are independent of frequency (also expressed through Ohm’s Law), inductors store energy when <em>current</em> flows through them, and thus are frequency-dependent.</p>
+
+<p>This can also be expressed through the equation</p>
+<div align="center"> $$V_{L}(t) = L\frac{di_{L}(t)}{dt}$$ </div>
+
+<p>By taking the Laplace transform, it is transformed into the s-domain</p>
+<div align="center"> $$V_{L}(s) = L[sI_{L}(s)-i_{L}(0^-)] = sLI_{L}(s) - Li_{L}(0^{-}) $$  
+$$V_{L}(s) - sLI_{L}(s) + Li_{L}(0^{-}) = 0$$ </div>
+
+<p>The second equation might provide a better perspective of how each component contributes to the total voltage. Notice that on the table of circuits above in s-domain, \(sLI_{L}(s)\) represents the voltage drop across the inductor, and \(Li_{L}(0^{-})\) represents the initial voltage going across the inductor when \(t=0\) in the form of a voltage source. Due the term being negative, the polarity of the voltage source is opposite to the polarity of \(V(s)\).</p>
+
+<p>The voltage source can be turned into a current source using <strong>source transformation</strong> with the current source parallel to the inductor. This can also be obtained by isolating \(I(s)\) from the previous equations</p>
+<div align="center"> $$I_{L}(s) = \frac{V_{L}(s)}{sL} + \frac{i_{L}(0^-)}{s} $$  
+$$I_{L}(s) - \frac{V_{L}(s)}{sL} - \frac{i_{L}(0^-)}{s} = 0$$ </div>
+
+<p>The second equation might provide a better perspective of how the current is split between branches. Going back to the table, \(\frac{V_{L}(s)}{sL}\) represents the current going across the inductor, and \(\frac{i_{L}(0^-)}{s}\) represents the current that was initially going across the inductor when \(t=0\).</p>
+
+<h3 id="capacitors">Capacitors</h3>
+<center><img src="timetos-domainvisual-capacitor.png" alt="centered image" /> </center>
+
+<p>Similar to inductors, capacitors also store energy and are frequency-dependent, but it occurs when there’s <em>voltage</em> going across it.</p>
+
+<p>This can be expressed through the equation</p>
+<div align="center"> $$i_{C}(t) = C\frac{dv_{C}(t)}{dt}$$ </div>
+
+<p>By taking the Laplace transform, it is transformed into the s-domain</p>
+<div align="center"> $$I_{C}(s) = C[sV_{C}(s) - v_{C}(0^{-})] = sCV_{C}(s) - Cv_{C}(0^{-})$$  
+$$I_{C}(s) - sCV_{C}(s) + Cv_{C}(0^{-}) = 0$$</div>
+
+<p>On the table above for capacitors, \(sCV_{C}(s)\) represents the current going across the capacitor, and \(Cv_{C}(0^{-})\) represents the current that was initially going across the capacitor when \(t=0\) in the form of a current source. Due to the the second term being negative, the direction of the current is going to the same node as \(I_{C}(s)\)</p>
+
+<p>The current source can also be transformed back into a voltage source in series with the capacitor using source transformation. Additionally, \(V_{C}(s)\) can be isolated from the previous equation, resulting in</p>
+<div align="center"> $$V_{C}(s) = \frac{I_{C}(s)}{sC} + \frac{v_{C}(0^{-})}{s}$$  
+$$V_{C}(s) - \frac{I_{C}(s)}{sC} - \frac{v_{C}(0^{-})}{s} = 0$$</div>
+
+<p>On the table, since \(\frac{v_{C}(0^{-})}{s}\) is positive, it has the same polarity as \(V_{C}(s)\). However, the second equation may provide a better perspective on the voltages going across each component.
+<!-- $$
+\mathscr{L}\{f(t)\}=\int_{t=0}^{\infty}f(t)e^{-st}dt
+$$ --></p>
+
+</div>
+
+
+
+
+<!-- Maybe find a different way?
+<script src="/EETestsite/js/scrollIfAnchor.js"></script>
+-->
+
+<footer class="footer footer-background" style="padding-top: 1em; padding-bottom: 1em">
+  <div class="container text-center">
+    
+    <p>Philip Johnson | Information and Computer Sciences | University of Hawaii <br />
+johnson@hawaii.edu<br /></p>
+
+
+    
+    <p style="margin: 0">Powered by the <a class="footer-link" href="https://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean-purple)<br>
+      Last update on: <span>2023-11-29 15:55:51 -1000</span></p>
+
+    <p style="margin: 0">
+      
+      10 prerequisites |
+      
+      10 modules
+      
+      | 14 outcomes
+      
+      
+      | 32 readings
+      
+      
+      | 28 experiences
+      
+      
+      | 13 assessments
+      
+    </p>
+  </div>
+</footer>
+
+
+<!-- Load Bootstrap JavaScript components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<!-- Add anchors to pages. -->
+<script>anchors.add();</script>
+
+
+</body>
+</html>
