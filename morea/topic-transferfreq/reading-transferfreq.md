@@ -13,7 +13,7 @@ morea_labels:
 ### Transfer Function
 
 Using phasors, we learned to solve circuit values for specific frequencies. In reality, sources can be a combination of frequencies. To determine how circuits perform under these conditions we need to utilize the **transfer function**.
-
+  
 In general the transfer function takes the form **$$\frac{out}{in}$$**. It is a comparison of the output to the input. We generally solve voltages or currents as inputs and outputs. There are four possible types of transfer functions:
 
 - Voltage gain - \\(\frac{V_o}{V_i}\\)
