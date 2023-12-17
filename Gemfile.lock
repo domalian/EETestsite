@@ -138,7 +138,3 @@ DEPENDENCIES
 BUNDLED WITH
    2.4.7
 
-gem update --system
-gem install bundler
-bundle update
-
