@@ -43,7 +43,7 @@ D(s) should have same form, we'll use: $$vs^{n} + ws^{n-1} + xs^{n-2} + \cdots +
 
 #### Straight Line Approximations
 
-Using the standard form of the transfer function H($\omega$), we plot each factor separately and then add them together to get the final approximation.
+Using the standard form of the transfer function H($$\omega$$), we plot each factor separately and then add them together to get the final approximation.
 
 1. Rearrange the transfer function so that it is in the form:
 
