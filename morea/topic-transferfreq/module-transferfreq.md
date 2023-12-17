@@ -5,9 +5,9 @@ morea_coming_soon: false
 morea_id: module-transferfreq
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-CHANGE-ME
+  - outcome-transferfreq
 morea_readings:
-  # - reading-CHANGE-ME
+  - reading-transferfreq
 morea_experiences:
   # - experience-CHANGE-ME
 morea_assessments:
@@ -20,4 +20,4 @@ morea_labels:
 morea_sort_order: 2
 ---
 
-CHANGE ME
+Understand transfer functions and frequency response.

@@ -5,9 +5,9 @@ morea_coming_soon: false
 morea_id: module-laplace
 morea_prerequisites:
 morea_outcomes:
-  # - outcome-CHANGE-ME
+  - outcome-laplace
 morea_readings:
-  # - reading-CHANGE-ME
+  - reading-laplace
 morea_experiences:
   # - experience-CHANGE-ME
 morea_assessments:
