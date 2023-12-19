@@ -8,8 +8,10 @@ morea_outcomes:
    - outcome-laplaceinitial
 morea_readings:
    - reading-laplaceinitial-RLC
+   - reading-laplacecircuit
    - reading-laplaceinitial-pdf
    - reading-laplacetable
+   - reading-laplacevisual
 morea_experiences:
    - experience-laplaceinitial-hw7
 morea_assessments:

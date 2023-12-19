@@ -7,7 +7,7 @@ morea_prerequisites:
 morea_outcomes:
   # - outcome-CHANGE-ME
 morea_readings:
-  # - reading-CHANGE-ME
+   - reading-inverselaplace
 morea_experiences:
   # - experience-CHANGE-ME
 morea_assessments:
@@ -20,4 +20,4 @@ morea_labels:
 morea_sort_order: 5
 ---
 
-CHANGE ME
+An introduction to inverse Laplace transformation of differential equations.

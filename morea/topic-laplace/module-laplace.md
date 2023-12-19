@@ -8,8 +8,9 @@ morea_outcomes:
   - outcome-laplace
 morea_readings:
   - reading-laplace
+  - reading-laplacepdf
 morea_experiences:
-  # - experience-CHANGE-ME
+ - experience-laplace
 morea_assessments:
   # - assessment-CHANGE-ME
 morea_type: module
@@ -20,4 +21,5 @@ morea_labels:
 morea_sort_order: 4
 ---
 
-CHANGE ME
+An introduction to Laplace transformation of differential equations.
+
