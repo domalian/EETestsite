@@ -12,7 +12,7 @@ The Laplace Transformation is a linear transformation between two vector spaces.
   
 Given a differential equation, that we are unable to solve, we apply the Laplace transform "&#8466; " to map it from the t-domain into an algebraic equation in the s-domain.  
 
-<center><img src="Laplace1.png"> </center>  
+<center><img src="assets/Laplace1.png"> </center>  
  
 We can then find a solution to the algebraic equation in the s-domain. Afterwards, we can use the inverse Laplace Transform “&#8466; $$^{-1}$$" to return the solution to the t-domain.
   
